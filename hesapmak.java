@@ -34,6 +34,8 @@ public class test3 {
                 sonuc = n1 / n2;
                 System.out.println("Bölme: (İlk Sayı / İkinci Sayı): " + sonuc);
                 break;
+           default:
+               System.out.println("Yanlış Seçim Tekrar Deneyin");
         }
         /*
         System.out.println("\n");
@@ -46,9 +48,10 @@ public class test3 {
         } else if (secim==3) {
             System.out.println("Çarpma: " + (n1*n2));
 
-        }else {
+        }else if{
             System.out.println("Bölme (n1/n2): " + (n1/n2));
-        }
+        }else {
+            System.out.println("Yanlış Seçim, Tekrar Deneyin");
         */
     }
 }
