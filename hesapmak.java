@@ -17,7 +17,7 @@ public class test3 {
         System.out.print("Hangi İşlemi Yapmak İstiyorsunuz: ");
         secim = input.nextInt();
 
-       switch (secim) {
+        switch (secim) {
             case 1:
                 sonuc = n1 + n2;
                 System.out.println("Toplam: " + sonuc);
@@ -31,27 +31,41 @@ public class test3 {
                 System.out.println("Çarpım: " + sonuc);
                 break;
             case 4:
-                sonuc = n1 / n2;
-                System.out.println("Bölme: (İlk Sayı / İkinci Sayı): " + sonuc);
-                break;
-           default:
-               System.out.println("Yanlış Seçim Tekrar Deneyin");
+                if (n2 == 0) {
+                    System.out.println("Bir Sayı 0'a Bölünemez");
+                    break;
+                } else {
+                    sonuc = n1 / n2;
+                    System.out.println("Bölme: (İlk Sayı / İkinci Sayı): " + sonuc);
+                    break;
+                }
+            default:
+                System.out.println("Yanlış Seçim Tekrar Deneyin");
         }
-        /*
+
         System.out.println("\n");
 
-        if (secim == 1){
+        /*
+
+        if (secim == 1) {
             System.out.println("Toplam: " + (n1 + n2));
-        } else if (secim==2) {
+        } else if (secim == 2) {
             System.out.println("Çıkarma (n1-n2): " + (n1 - n2));
 
-        } else if (secim==3) {
-            System.out.println("Çarpma: " + (n1*n2));
+        } else if (secim == 3) {
+            System.out.println("Çarpma: " + (n1 * n2));
 
-        }else if{
-            System.out.println("Bölme (n1/n2): " + (n1/n2));
+        } else if (secim == 4) {
+            if (n2 != 0) {
+                System.out.println("Bölme (n1/n2): " + (n1 / n2));
+            } else {
+                System.out.println("Bir Sayı 0'a Bölünemez");
+            }
         }else {
             System.out.println("Yanlış Seçim, Tekrar Deneyin");
-        */
+        }
+
+         */
+
     }
 }
