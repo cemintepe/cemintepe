@@ -11,12 +11,15 @@ public class test3 {
             System.out.print(i + " ");
             toplam += i;
         }
+        int ilktoplam = toplam;
+        System.out.print("\n4'ün Katları Toplamı: " + toplam);
         System.out.println();
         System.out.print("5'in Kuvvetleri: ");
         for (int i = 1; i <=k; i *= 5){
             System.out.print(i + " ");
             toplam += i;
         }
+        System.out.print("\n5'in Katları Toplamı: " + (toplam - ilktoplam));
         System.out.print("\nSayıların Toplamı: \n" + toplam);
     }
 }
