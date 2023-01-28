@@ -8,6 +8,9 @@ public class test3 {
         System.out.print("Doğum Yılınızı Giriniz: ");
         dogumYili = input.nextInt();
 
+        System.out.println("Doğum Yılınız: " + dogumYili);
+        System.out.print("Çin Zodyağı Burcunuz: ");
+
         if (dogumYili % 12 == 0) {
             System.out.println("Maymun");
         } else if (dogumYili % 12 == 1) {
